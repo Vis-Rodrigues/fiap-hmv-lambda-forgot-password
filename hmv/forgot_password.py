@@ -14,7 +14,7 @@ def forgot(event):
 
         logger_info(response)
 
-        return return_response(200, 'Código para redefinir a senha enviado com sucesso.', response)
+        return return_response(200, 'Código para redefinir a senha enviado com sucesso.')
 
     except client.exceptions.UserNotFoundException as e:
         logger_error(str(e))

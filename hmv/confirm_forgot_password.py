@@ -16,7 +16,7 @@ def confirm_forgot(event):
         )
         logger_info(response)
 
-        return return_response(200, 'Senha alterada com sucesso.', response)
+        return return_response(200, 'Senha alterada com sucesso.')
 
     except client.exceptions.UserNotFoundException as e:
         logger_error(str(e))
